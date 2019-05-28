@@ -26,7 +26,7 @@ namespace AzureCourse.Controllers
 
         public IActionResult Test()
         {
-            return null;
+            return Ok();
         }
 
         public IActionResult Privacy()
