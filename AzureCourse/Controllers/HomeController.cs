@@ -24,6 +24,11 @@ namespace AzureCourse.Controllers
             return View("Index", model);
         }
 
+        public IActionResult Test()
+        {
+            throw null;
+        }
+
         public IActionResult Privacy()
         {
             return View();
