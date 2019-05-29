@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using AzureCourse.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AzureCourse.Services;
 
 namespace AzureCourse
 {
@@ -43,6 +44,7 @@ namespace AzureCourse
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddScoped<CourseStore>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

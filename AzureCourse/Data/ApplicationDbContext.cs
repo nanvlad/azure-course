@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AzureCourse.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,5 +13,7 @@ namespace AzureCourse.Data
             : base(options)
         {
         }
+
+        public DbSet<Course> Course { get; set; }
     }
 }
