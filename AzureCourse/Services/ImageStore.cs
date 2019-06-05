@@ -9,11 +9,11 @@ namespace AzureCourse.Services
     public class ImageStore
     {
         private readonly CloudBlobClient _client;
-        private readonly string _baseUrl = "https://azurecourse.blob.core.windows.net";
+        private readonly string _baseUrl = "https://azurecourse2.blob.core.windows.net";
 
         public ImageStore()
         {
-            var credentials = new StorageCredentials("azurecourse", "HdpTu+AWf3+a0tfqiecfdIWDsbZkZSRgkWcfQ8BEuaSOPQbJkOMygn7keJAmcBkHsfARdEkhv1hSM8Ouvolcqw==");
+            var credentials = new StorageCredentials("azurecourse2", "xDfj8kPisVQ3cGkxCwkfZ6Oy51Dbi0al/sd2b2Cy9nBOS803vNs8F51VLgzslsdKdiO1eC6WRqDD9fB7C8vQHQ==");
             _client = new CloudBlobClient(new Uri(_baseUrl), credentials);
         }
 
